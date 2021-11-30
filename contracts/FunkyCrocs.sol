@@ -8,9 +8,9 @@ contract FunkyCrocs is ERC721Enumerable, Ownable {
     using Address for address;
     
     // Starting and stopping sale, presale and whitelist
-    bool public saleActive = false;
     bool public whitelistActive = false;
     bool public presaleActive = false;
+    bool public saleActive = false;
 
     // Reserved for the team, customs, giveaways, collabs and so on.
     uint256 public reserved = 150;
@@ -25,7 +25,7 @@ contract FunkyCrocs is ERC721Enumerable, Ownable {
     uint256 public constant MAX_MINT_PER_TX = 20;
 
     // The base link that leads to the image / video of the token
-    string public baseTokenURI = "https://api.funkycrocs.io/";
+    string public baseTokenURI = "http://45.55.35.143/";
 
     // Team addresses for withdrawals
     address public a1;
